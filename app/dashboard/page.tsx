@@ -3,6 +3,7 @@ import { Page } from "@/components/layout/page";
 import { MENU_LIST } from "@/lib/menu";
 
 export default async function DemoPage() {
+  fetch("/api/hello");
   const menu = MENU_LIST["dashboard"].children["dashboard"];
   return (
     <Page>
